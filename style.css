@@ -1,0 +1,69 @@
+html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+/* Nav  */
+.wrapper {
+    position: relative;
+}
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    padding: 5px;
+    background-color: #c9e4e7;
+    position: absolute;
+    z-index: 1;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.left-side {
+    display: flex;
+}
+.left-side > .brand > a > img {
+    width: 6em;
+    height: 100%;
+}
+.nav-wrapper > .right-side > div {
+    margin-right: 40px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+.right-side {
+    
+}
+.right-side > div {
+    padding-top: 20px;
+}
+
+/* ** Link style */
+
+.nav-link-wrapper {
+    height: ;
+    font-weight: 30px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+.nav-link-wrapper > a {
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: 'Open Sans', sans-serif;
+    font-size: initial;
+    font-weight: bold;
+    cursor: url('http://pngimg.com/uploads/football/football_PNG52729.png');
+    margin-right: 20px;
+    color: #8a8a8a;
+    font-weight: 300px;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+.nav-link-wrapper > a:hover {
+    border-bottom: 2px solid black;
+}
+/* SLIDER STYLE */
+.carousel-inner img {                                                       
+width: 100vw;
+max-height: 95vh;
+}          
+.myCarousel {
+    background-color: black;
+}                 
