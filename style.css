@@ -1,3 +1,4 @@
+html {}
 html, body {
     width: 100%;
     margin: 0;
@@ -6,14 +7,18 @@ html, body {
 /* Nav  */
 .wrapper {
     position: relative;
+    background-color: white;
 }
 .nav-wrapper {
     display: flex;
     justify-content: space-between;
     width: 100vw;
     padding: 5px;
-    background-color: #c9e4e7;
-    position: absolute;
+    top: 0;
+    overflow: hidden;
+    position: fixed;
+    background-color: white;
+    /* position: absolute; */
     z-index: 1;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -51,19 +56,70 @@ html, body {
     font-weight: bold;
     cursor: url('http://pngimg.com/uploads/football/football_PNG52729.png');
     margin-right: 20px;
-    color: #8a8a8a;
+    color: #082D35;
     font-weight: 300px;
     text-decoration: none;
     transition: color 0.5s;
 }
 .nav-link-wrapper > a:hover {
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid #082D35;
+    color: #A67400;
 }
+
 /* SLIDER STYLE */
 .carousel-inner img {                                                       
-width: 100vw;
-max-height: 95vh;
+    width: 100%;
+    height: 50%;
+    max-height: 100%;
+    border: 5px #082D35;
+    
 }          
-.myCarousel {
-    background-color: black;
-}                 
+
+.carousel-inner > #slider-image > img {
+    border-radius: 0% 0% 20% 20%;
+}
+#myCarousel {
+    /* background-color: white; */
+}       
+
+/* LATEST MATCH FIXTURES */
+.latest-match {
+    background-color: #f4ac45;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+    width: 100vw;
+    height: 15vh;
+    https://pixabay.com/get/57e1d346435aad14f6d1867dda6d49214b6ac3e45656754f772679d793/banner-1165981_1920.jpg);
+}
+.latest-match > .apponent-team {
+    display: flex;
+    padding-top: 1rem;
+}
+.latest-match > .apponent-team > div > p > img {
+    width: 9rem;
+    height: 9rem;
+    background-color:;
+    
+}
+.latest-match > .VS {
+    color: white;
+    margin-top: 2rem;
+}
+.opponent-name1 {
+    margin-left: 2rem;
+    margin-top: 3rem;
+    color: white;
+}
+.opponent-name2 {
+    margin-right: 2rem;
+    margin-top: 3rem;
+    color: white;
+}
+
+/* MAIN INFORMATION */
+main {
+    width: 100vw;
+    height: 100vh;
+    background: white;
+}
